@@ -1,0 +1,165 @@
+//Blink FERNANDO in Morse Code
+int led1 = D7;
+int dot = 250;
+int line = 1500;
+int morse_sep = 500;
+int letter_sep  = 1000;
+
+void setup() {
+
+    pinMode(led1, OUTPUT);
+
+}
+
+
+void loop() {
+    // Morse Code Blinks
+    //Dots will be represented by a 250 milisecond blink.
+    //Lines will be represented by a 1500 milisecond blink
+    //Morse Character seperation will be represented by a 500 milisecond pause.
+    //Letter seperation will be represented by a 1000 milisecond pause.
+    
+    //Letter "F"
+    
+    digitalWrite(led1, HIGH);   //turn on led
+    delay(dot);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    digitalWrite(led1, HIGH);
+    delay(dot);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    digitalWrite(led1, HIGH);
+    delay(line);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    digitalWrite(led1, HIGH);
+    delay(dot);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    //Seperator 
+    delay(letter_sep);
+    
+    //Letter "E"
+    
+    digitalWrite(led1, HIGH);
+    delay(dot);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    //Seperator 
+    delay(letter_sep);
+    
+    //Letter "R"
+    
+    digitalWrite(led1, HIGH);
+    delay(dot);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    digitalWrite(led1, HIGH);
+    delay(line);
+    digitalWrite(led1, LOW);
+    delay(500);
+    
+    digitalWrite(led1, HIGH);
+    delay(dot);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    //Seperator 
+    delay(letter_sep);
+    
+    //Letter "N"
+    
+    digitalWrite(led1, HIGH);
+    delay(line);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    digitalWrite(led1, HIGH);
+    delay(dot);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    //Seperator 
+    delay(letter_sep);
+    
+    //Letter "A"
+    
+    digitalWrite(led1, HIGH);
+    delay(dot);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    digitalWrite(led1, HIGH);
+    delay(line);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    //Seperator 
+    delay(letter_sep);
+    
+    //Letter "N"
+    
+    digitalWrite(led1, HIGH);
+    delay(line);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    digitalWrite(led1, HIGH);
+    delay(dot);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    //Seperator 
+    delay(letter_sep);
+    
+    //Letter "D"
+    
+    digitalWrite(led1, HIGH);
+    delay(line);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    digitalWrite(led1, HIGH);
+    delay(dot);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    digitalWrite(led1, HIGH);
+    delay(dot);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    //Seperator 
+    delay(letter_sep);
+    
+    //Letter "O"
+    
+    digitalWrite(led1, HIGH);
+    delay(line);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    digitalWrite(led1, HIGH);
+    delay(line);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    digitalWrite(led1, HIGH);
+    delay(line);
+    digitalWrite(led1, LOW);
+    delay(morse_sep);
+    
+    //Seperator 
+    delay(letter_sep);
+    
+    
+
+    // And repeat!
+}
